@@ -28,147 +28,93 @@
             </ul>
         </nav>
     </header>
-<main class="projetos__container">
-    <section class="projetos__hero">
-        <h1 class="projetos__title">Projetos</h1>
-        <p class="projetos__subtitle">Soluções que criei</p>
-    </section>
+
+    <main class="projetos__slider">
     
-    <section class="projetos__gallery">
-        <!-- Projeto 1 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Full-stack</span>
-                        <h3 class="projeto__name">E-commerce Platform</h3>
-                        <p class="projeto__description">Plataforma completa de vendas online com dashboard administrativo</p>
-                        <div class="projeto__stack">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+        <div class="projetos__track">
+            <div class="projeto__slide active">
+                <div class="projeto__left">
+                    <div class="projeto__info">
+                        <span class="projeto__number">
+                            <span class="current"></span>/<span class="total"></span>
+                        </span>
+                        <h2 class="projeto__title">Econsciente</h2>
+                        <p class="projeto__desc">
+                            O projeto acadêmico centraliza dicas de conservação, manuseio e aproveitamento de frutas, legumes e verduras, além de oferecer um quiz interativo com resultados personalizados conforme o desempenho do usuário.
+                        </p>
+                        <div class="projeto__tech">
+                            <span>Frontend</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
                         </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
+                        <div class="projeto__links">
+                            <a href="https://israelsouza.github.io/ECONSciente/" target="_blank" class="btn-primary">Ver Projeto</a>
+                            <a href="https://github.com/israelsouza/ECONSciente" target="_blank" class="btn-secondary">Ver Código</a>
                         </div>
                     </div>
+                </div>
+                <div class="projeto__right">
+                    <div class="projeto__preview"></div>
                 </div>
             </div>
         </div>
         
-        <!-- Projeto 2 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Frontend</span>
-                        <h3 class="projeto__name">Task Manager</h3>
-                        <p class="projeto__description">Interface moderna para gerenciamento de projetos e equipes</p>
-                        <div class="projeto__stack">
-                            <span>Vue.js</span>
-                            <span>Tailwind</span>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="projetos__navigation">
+            <button class="nav-btn prev" onclick="previousSlide()" aria-label="Anterior">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <button class="nav-btn next" onclick="nextSlide()" aria-label="Próximo">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 6 15 12 9 18"/>
+                </svg>
+            </button>
         </div>
-        
-        <!-- Projeto 3 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Mobile</span>
-                        <h3 class="projeto__name">Weather App</h3>
-                        <p class="projeto__description">App de clima com geolocalização e previsões detalhadas</p>
-                        <div class="projeto__stack">
-                            <span>React Native</span>
-                            <span>API</span>
-                            <span>Redux</span>
-                        </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <section class="projetos__gallery">
-        <!-- Projeto 1 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Full-stack</span>
-                        <h3 class="projeto__name">E-commerce Platform</h3>
-                        <p class="projeto__description">Plataforma completa de vendas online com dashboard administrativo</p>
-                        <div class="projeto__stack">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Projeto 2 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Frontend</span>
-                        <h3 class="projeto__name">Task Manager</h3>
-                        <p class="projeto__description">Interface moderna para gerenciamento de projetos e equipes</p>
-                        <div class="projeto__stack">
-                            <span>Vue.js</span>
-                            <span>Tailwind</span>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Projeto 3 -->
-        <div class="projeto__card">
-            <div class="projeto__visual" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                <div class="projeto__overlay">
-                    <div class="projeto__content">
-                        <span class="projeto__category">Mobile</span>
-                        <h3 class="projeto__name">Weather App</h3>
-                        <p class="projeto__description">App de clima com geolocalização e previsões detalhadas</p>
-                        <div class="projeto__stack">
-                            <span>React Native</span>
-                            <span>API</span>
-                            <span>Redux</span>
-                        </div>
-                        <div class="projeto__actions">
-                            <a href="#" class="btn btn--primary">Ver Live</a>
-                            <a href="#" class="btn btn--secondary">Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+    </main>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.projeto__slide');
+
+        function updateCounter(index) {
+            // Procura o contador no slide ativo
+            const number = slides[index].querySelector('.projeto__number');
+            if (number) {
+                const current = number.querySelector('.current');
+                const total = number.querySelector('.total');
+                current.textContent = String(index + 1).padStart(2, '0');
+                total.textContent = String(slides.length).padStart(2, '0');
+            }
+        }
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                // Limpa o contador dos slides inativos
+                const number = slide.querySelector('.projeto__number');
+                if (number && i !== index) {
+                    number.querySelector('.current').textContent = '';
+                    number.querySelector('.total').textContent = '';
+                }
+            });
+            updateCounter(index);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function previousSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Inicializa
+        showSlide(currentIndex);
+    </script>
 </body>
 </html>
