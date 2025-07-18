@@ -355,3 +355,171 @@ a {
 }
 
 /* FIM Projetos */
+
+/* SOBRE */
+
+/* Centralização e destaque */
+
+.destaque-central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destaque-nome {
+    color: #7a8ff9;
+    font-weight: bold;
+    font-size: 1.18em;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(122,143,249,0.18);
+}
+
+.destaque-etapas {
+    font-weight: 600;
+    font-size: 1.13em;
+    color: #b0c4de;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    text-shadow: 0 2px 8px rgba(122,143,249,0.10);
+    display: inline;
+    margin-left: 4px;
+}
+
+/* Caixa fosca para contraste */
+.sobre__box-fosca {
+    background: rgba(20, 20, 30, 0.747); /* Mais escuro e opaco */
+    border-radius: 18px;
+    padding: 32px 40px; /* Mais espaçamento */
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.265);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(6px); /* Adiciona blur para reforçar o efeito fosco */
+}
+
+.main__index{
+  flex-direction: column;
+  min-height: 60svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Títulos e textos */
+
+
+.sobre__titulo {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+  background: linear-gradient(90deg, #b0c4de 10%, #6a82fb 60%, #7a8ff9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 1px 0 #fff2, 0 0 16px #7a8ff988;
+  text-align: center;
+  animation: fadeDown 1.5s ease 1.5s both, gradient-move 4s ease-in-out infinite alternate;
+  background-size: 200% 100%;
+  animation-delay: 3s;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.sobre__descricao-alt {
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #7a8ff9 10%, #b0c4de 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+  animation: fadeIn 1.5s ease;
+  animation-delay: 1.6s; /* sem delay */
+  animation-fill-mode: backwards;
+}
+
+.sobre__subtitulo {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+    background: linear-gradient(90deg, #b0c4de 10%, #6a82fb 60%, #7a8ff9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 1px 0 #fff2, 0 0 16px #7a8ff988;
+    text-align: center;
+    animation: fadeDown 1.5s ease 1.5s both, gradient-move 4s ease-in-out infinite alternate;
+    background-size: 200% 100%;
+    animation-delay: 5s, 0s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.overlay-inicial {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(20, 20, 30, 0.808); 
+  animation: overlayFadeIn 1.5s ease forwards;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 0.72; }
+}
+
+.sobre__descricao {
+    font-size: 1.15rem;
+    color: #f3f3f3;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.sobre__servicos-titulo {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 0.7em;
+    color: #fff;
+}
+
+.sobre__servicos-lista {
+    padding: 0;
+    margin: 0 0 1.8em 2em;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+}
+
+.sobre__servicos-lista li {
+    margin-bottom: 0.5em;
+    padding: 6px 0;
+
+}
+
+.sobre__contato-titulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.sobre__contato p {
+    color: white;
+}
+
+.sobre__contato a {
+    color: #6982ff;
+    text-decoration: underline;
+}
+
+.emoji {
+    font-size: 1.2em;
+}
