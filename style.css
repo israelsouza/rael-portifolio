@@ -65,6 +65,12 @@ nav a:hover {
   color: var(--cor-destaque);
 }
 
+main li {
+  list-style: none;
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto); 
+}
+
 section {
   padding: 6rem 0;
   border-bottom: 1px solid var(--cor-secundaria);
@@ -81,7 +87,7 @@ section:last-of-type {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 80px; /* Espaço para o header fixo */
+  padding-top: 80px;
 }
 
 .inicio-container h1 {

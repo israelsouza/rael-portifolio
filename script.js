@@ -1,30 +1,30 @@
 const projetos = [
   {
-    nome: "Plataforma de E-commerce",
+    nome: "Econsciente",
     descricao:
-      "Uma plataforma de e-commerce completa com carrinho de compras, checkout e painel administrativo.",
-    tecnologias: ["React", "Node.js", "Express", "MongoDB"],
-    imagem: "https://via.placeholder.com/400x200.png?text=E-commerce",
-    link_repo: "https://github.com/israelsouza/ecommerce",
+      "O projeto acadêmico centraliza dicas de conservação, manuseio e aproveitamento de frutas, legumes e verduras, além de oferecer um quiz interativo com resultados personalizados conforme o desempenho do usuário.",
+    tecnologias: ["HTML", "CSS", "JavaScript", "BootsTrap"],
+    imagem: "./assets/econs.jpg",
+    link_repo: "https://github.com/israelsouza/ECONSciente",
+    link_demo: "https://israelsouza.github.io/ECONSciente/",
+  },
+  {
+    nome: "Buscapet",
+    descricao:
+      "A plataforma colaborativa conecta pessoas que perderam seus animais de estimação com aquelas que os encontraram. Nela, você pode cadastrar animais perdidos e encontrados, buscar por localização e entrar em contato direto com outros usuários",
+    tecnologias: ["React", "NodeJS", "Express", "WebSocket", "API REST", "POO", "Testes"],
+    imagem: "./assets/busca.png",
+    link_repo: "https://github.com/israelsouza/busca-pet",
     link_demo: "#",
   },
   {
-    nome: "Aplicativo de Tarefas",
+    nome: "Encurtador de link",
     descricao:
-      "Um aplicativo de gerenciamento de tarefas com autenticação de usuários e sincronização em tempo real.",
-    tecnologias: ["Vue.js", "Firebase", "Vuetify"],
-    imagem: "https://via.placeholder.com/400x200.png?text=App+de+Tarefas",
-    link_repo: "https://github.com/israelsouza/todo-app",
-    link_demo: "#",
-  },
-  {
-    nome: "Blog Pessoal",
-    descricao:
-      "Um blog pessoal com sistema de gerenciamento de conteúdo (CMS) para publicação de artigos.",
-    tecnologias: ["Next.js", "Markdown", "Tailwind CSS"],
-    imagem: "https://via.placeholder.com/400x200.png?text=Blog",
-    link_repo: "https://github.com/israelsouza/blog",
-    link_demo: "#",
+      "",
+    tecnologias: ["NodeJS", "TypeScript", "Vercel", "Postgresql"],
+    imagem: "./assets/link.jpg",
+    link_repo: "https://github.com/israelsouza/ts-link",
+    link_demo: "https://ts-link-blush.vercel.app/",
   },
 ];
 
