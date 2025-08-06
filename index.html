@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IsRael</title>
+    <title>Israel de Souza - Desenvolvedor Fullstack</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg index">
-    <div class="overlay-inicial">
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li">
-                    <a href="./sobre.html" id="">
-                        Sobre
-                    </a>
-                </li>
-                <li class="header__li">
-                    <a href="./projetos.html">
-                        Projetos
-                    </a>
-                </li>
-                <li class="header__li">
-                    <a href="./contato.html">
-                        Contato
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main__index">
-        <div>
-            <h1 class="sobre__titulo">Desenvolvedor Fullstack</h1>
-            <p class="sobre__descricao-alt">
-                Israel de Souza
-            </p>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="inicio-container">
+                <h1>Israel de Souza</h1>
+                <h2>Desenvolvedor Fullstack</h2>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre Mim</h2>
+                <p>Olá! Sou Israel de Souza, um desenvolvedor Fullstack apaixonado por criar soluções tecnológicas
+                    inovadoras e eficientes. Tenho experiência em desenvolvimento web e mobile, utilizando as mais
+                    modernas tecnologias do mercado.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2 class="titulo-secao">Meus Projetos</h2>
+                <div id="projetos-container">
+                    <!-- Projetos serão carregados aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2 class="titulo-secao">Contato</h2>
+                <p>Vamos construir algo incrível juntos? Entre em contato!</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/israel-souza-dev/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/israelsouza" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:israel.souza.dev@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Israel de Souza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
