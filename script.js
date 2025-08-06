@@ -20,7 +20,7 @@ const projetos = [
   {
     nome: "Encurtador de link",
     descricao:
-      "",
+      "API para encurtamento de URLs, projetada para ser rápida e eficiente. A ferramenta recebe uma URL longa e retorna uma versão curta e única. O projeto foi construído com TypeScript e Node.js, com dados persistidos em um banco PostgreSQL e deploy automatizado via Vercel.",
     tecnologias: ["NodeJS", "TypeScript", "Vercel", "Postgresql"],
     imagem: "./assets/link.jpg",
     link_repo: "https://github.com/israelsouza/ts-link",
