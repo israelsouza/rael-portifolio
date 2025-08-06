@@ -38,6 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .map((tech) => `<span>${tech}</span>`)
       .join("");
 
+    const demoLinkHtml =
+      projeto.link_demo && projeto.link_demo !== "#"
+        ? `<a href="${projeto.link_demo}" target="_blank">Ver Demo</a>`
+        : "";
+
     projetoDiv.innerHTML = `
             <img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">
             <div class="projeto-info">
@@ -48,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="projeto-links">
                     <a href="${projeto.link_repo}" target="_blank">Ver Repositório</a>
-                    <a href="${projeto.link_demo}" target="_blank">Ver Demo</a>
+                    ${demoLinkHtml}
                 </div>
             </div>
         `;
