@@ -3,6 +3,7 @@ import { X, ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import projectsData from '@/lib/allProjects'
 
 interface Project {
   id: number;

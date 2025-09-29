@@ -5,6 +5,7 @@ const projectsData = [
     description: "Site educativo que promove conscientização de alimentos de hortifruti",
     detailedDescription: "O projeto acadêmico centraliza dicas de conservação, manuseio e aproveitamento de frutas, legumes e verduras, além de oferecer um quiz interativo com resultados personalizados conforme o desempenho do usuário.",
     image: "econs.jpg",
+    images: [ "econs.jpg" ],
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     githubUrl: "https://github.com/israelsouza/ECONSciente",
     liveUrl: "https://israelsouza.github.io/ECONSciente/",
@@ -16,6 +17,7 @@ const projectsData = [
     description: "Plataforma colaborativa que promove divulgação de pets que foram perdidos e encontrados na rua.",
     detailedDescription: "A plataforma colaborativa conecta pessoas que perderam seus animais de estimação com aquelas que os encontraram. Nela, você pode cadastrar animais perdidos e encontrados, buscar por localização e entrar em contato direto com outros usuários",
     image: "busca.png",
+    images: [ "busca.png" ],
     technologies: ["React", "Node.JS", "Express", "WebSocket", "API REST", "POO", "Testes E2E"],
     githubUrl: "https://github.com/israelsouza/busca-pet",
     featured: true
