@@ -32,7 +32,7 @@ const projectsData = [
       "link.jpg",
       "link1.jpg"
     ],
-    technologies: ["NodeJS", "TypeScript", "Postgresql", "Vercel"],
+    technologies: ["NodeJS", "Integração de API", "TypeScript", "Postgresql", "Vercel"],
     githubUrl: "https://github.com/israelsouza/ts-link",
     liveUrl: "https://ts-link-blush.vercel.app/",
     featured: true
@@ -52,6 +52,22 @@ const projectsData = [
     githubUrl: "https://github.com/Sofia-gith/estudoGaby",
     liveUrl: "https://sofia-gith.github.io/estudoGaby/",
     featured: false
+  },
+  {
+    id: 5,
+    title: "Desafio Meteor Madness - Hackathoon da Nasa",
+    description: "Site para a resolução do desafio 'Meteor Madness' proposto no hackathoon da Nasa no ano de 2025.",
+    detailedDescription: "",
+    image: "nasa01.jpg",
+    images: [
+      "nasa01.jpg",
+      "nasa02.jpg",
+      "nasa03.jpg"
+    ],
+    technologies: ["React", "Tailwind CSS", "NodeJS", "Integração de API"],
+    githubUrl: "https://github.com/israelsouza/NASA_Challenge-Meteor_Madness",
+    liveUrl: "https://nasa-challenge-meteor-madness-web.vercel.app/",
+    featured: true
   }
 ];
 
