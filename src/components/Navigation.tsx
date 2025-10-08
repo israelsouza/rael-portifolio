@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { URL_BASE } from '@/constants/urlBase.ts'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const URL = URL_BASE
+  // const URL = 'http://localhost:8080'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +18,19 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const hash = window.location.hash;
+    if (!hash) return;
+
+    const t = setTimeout(() => {
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 120);
+
+    return () => clearTimeout(t);
+  }, []);
+
   const navItems = [
     { label: "Início", href: "#home" },
     { label: "Sobre", href: "#about" },
@@ -23,11 +39,17 @@ const Navigation = () => {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    const selector = href.startsWith("#") ? href : `#${href}`;
+    const element = document.querySelector(selector);
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+      return;
     }
-    setIsMobileMenuOpen(false);
+
+    const base = URL?.replace(/#.*$/, "") ?? "/";
+    window.location.href = `${base}${selector}`;
   };
 
   return (

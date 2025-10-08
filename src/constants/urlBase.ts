@@ -1,0 +1,1 @@
+export const URL_BASE: string = `https://rael-portifolio.pages.dev/`
