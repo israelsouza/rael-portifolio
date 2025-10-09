@@ -63,13 +63,16 @@ const Projects = () => {
                     Código
                   </a>
                 </Button>
-                <Button variant="default" size="sm" asChild>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Ver Live
-                  </a>
-                </Button>
+               {project.liveUrl?.toString().trim() ? (
+                  <Button variant="default" size="sm" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Ver Live
+                    </a>
+                  </Button>
+                ) : null}
               </CardFooter>
+              
             </Card>
           ))}
         </div>
